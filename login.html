@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8"/>
+       <title>Aplicativo de acompanhamento</title>
+        <style>
+body{
+    background-color:rgb(102, 102, 202);
+margin:0;
+}
+div#interface{
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas:
+    "imagem icone" 
+    "imagem login";
+    }
+    .ab{
+        grid-area:icone;
+        margin-bottom: 10px;
+        margin-left: 370px;
+        margin-top:20px;
+      
+    }
+    
+    .ac{
+        grid-area:imagem;
+    }
+.ad{
+        grid-area:login;
+        margin-top: 40px;
+        margin-left: 370px;
+    }
+    span#entrar:hover{
+        background-color: darkgray;
+        color: darkred;
+        transition: 3s;}
+    span#recuperar{
+        position: relative;
+        left: 90px;
+        margin-top: 50px;
+    }
+    #bameil{
+        border-radius: 10px;
+    }
+    #bpass{
+        border-radius: 10px;}
+
+    footer#ajuda{
+        text-align:center;
+        width:680px;}
+
+        footer#ajuda:hover{border:none;
+        background-color: darkgray;
+        color: darkred;}
+
+        a{text-decoration: none;}
+        a{
+            color:blanchedalmond;}
+            span#criar :hover{
+                background-color:rgb(71, 71, 190);
+            }
+            span#recuperar:hover{ background-color:rgb(71, 71, 190);
+            }
+            fieldset{
+                position: relative;
+                left:-100px;
+                padding: 10px;
+                width:60px;
+                height: 300px;
+                margin-top: -50px;
+                border-radius: 10px;
+                border-color: rgba(71, 71, 190, 0.3);
+            }
+            label{
+                position: relative;
+                left: 230px;
+            }
+            input{
+                position: relative;
+                left:0px;
+                height:40px;
+                margin-top:-200px;
+                border-radius: 10px;
+            }
+            div#entrar{
+                font-family: Arial;
+                background-color: rgb(71, 71, 190);
+                height:40px;
+                width:355px;
+                border-radius: 10px;
+                margin-top: 9px;
+                text-align: center;
+                font-size: 20pt;
+            }
+            #criar{
+                background-color: rgba(100, 177, 23, 0.829);
+                color:blanchedalmond;
+                text-align: center;
+                font-family: Arial;
+                font-size: 14pt;
+                height:25px;
+                width:140px;
+                border-radius: 10px;
+                border-top: 9px;
+                position: relative;
+                left:91px;
+                padding:5px;
+
+            }
+            #corverde{
+                border-top: 2px rgba(71, 71, 190, 0.3) solid;
+                padding: 9px;
+                height: 80px;
+                margin-bottom:9px;
+            }
+            .vc{
+                width:460pt;
+            }
+        
+        </style>
+    </head>
+    <body>
+    <div id="interface">
+                <div class="ab">
+           
+                            <img src="ann.PNG" alt="imagem da ade">
+                            <h1>Acompanhamento <br/>de Estudantes<br/>Internacionais<h1>
+                </div>
+
+
+                <div class="ac">
+                            <img src="ma.PNG" alt="imagem da ade" class="vc">
+                </div>
+
+
+                <div class="ad">
+        <div id="formulario">
+            <form>
+                <fieldset>
+            <br>
+           
+            &nbsp;<input type="email" name="aemail" id="bameil" size="50" maxlength="300" placeholder="E-mail ou número de Telemovel">
+            <br>
+            &nbsp;<input type="password" name="apass" id="bpass" size="50"maxlength="300" placeholder="Palavra-passe"> 
+<br>
+<div id="entrar"><a href="home.html">Iniciar Sessão</a></div><br>
+<span id="recuperar">Recuperar Palavra-Passe</span>
+
+
+                    <br><br><br><br>
+            <footer id="corverde">
+<div id="criar"><a href="criar.html">Criar Conta</a></div>
+            </footer>
+                </fieldset>
+            </form></div>
+
+</div>
+
+</div>
+    </body>
+</html>
